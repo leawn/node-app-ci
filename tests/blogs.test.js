@@ -65,11 +65,11 @@ describe('When logged in',() => {
 describe('When not logged in',() => {
     const actions = [
         {
-            method: 'GET',
+            method: 'get',
             path: '/api/blogs'
         },
         {
-            method: 'POST',
+            method: 'post',
             path: '/api/blogs',
             data: {
                 title: 'My title nli',
