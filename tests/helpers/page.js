@@ -47,6 +47,7 @@ class CustomPage {
                 }
             })
                 .then(res => res.json())
+                .catch(err => console.log(err))
         }, path);
     }
 
@@ -61,6 +62,7 @@ class CustomPage {
                 body: JSON.stringify(_data)
             })
                 .then(res => res.json())
+                .catch(err => console.log(err))
         }, path, data)
     }
 
