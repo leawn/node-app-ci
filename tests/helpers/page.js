@@ -5,8 +5,8 @@ const userFactory = require('../factories/userFactory');
 class CustomPage {
     static async build() {
         const browser = await puppeteer.launch({
-            headless: false
-            //args: ['--no-sandbox']
+            headless: true,
+            args: ['--no-sandbox']
         });
 
         const page = await browser.newPage();
@@ -69,7 +69,6 @@ class CustomPage {
     execRequests(actions) {
         return Promise.all(
             actions.map(({ method, path, data }) => {
-                console.log(method);
                 return this[method](path, data);
             })
         );
