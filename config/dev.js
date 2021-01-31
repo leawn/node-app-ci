@@ -4,7 +4,5 @@ module.exports = {
   googleClientSecret: '8mkniDQOqacXtlRD3gA4n2az',
   mongoURI: `mongodb://localhost:27017/node-advanced`,
   redisUrl: `redis://127.0.0.1:6379`,
-  cookieKey: '123123123',
-  accessKeyId: 'AKIAUJCPSVFMX4JNNX7O',
-  secretAccessKey: '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'
+  cookieKey: '123123123'
 };
