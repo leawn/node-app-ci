@@ -64,6 +64,8 @@ class BlogFormReview extends Component {
             type="file"
             accept="image/*"
             onChange={this.onFileChange.bind(this)}
+            // here should be added a validation that checks if there is an image added
+            // or other possibility to not to add image at all
         />
 
         {this.renderButtons()}

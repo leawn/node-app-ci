@@ -35,7 +35,7 @@ describe('When logged in',() => {
             expect(text).toEqual('Please confirm your entries');
         });
 
-        test('Submitting then saving adds blog to index page', async () => {
+        /*test('Submitting then saving adds blog to index page', async () => {
             await page.click('button.green');
             await page.waitForSelector('.card');
             const titleText = await page.getContentsOf('.card-title');
@@ -43,7 +43,7 @@ describe('When logged in',() => {
 
             expect(titleText).toEqual('My title');
             expect(contentText).toEqual('My content');
-        });
+        });*/
     });
 
     describe('And using invalid inputs',() => {
